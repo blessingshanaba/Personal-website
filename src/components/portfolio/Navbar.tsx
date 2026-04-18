@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
-import { useTheme } from '@/components/theme-provider';
+import { useTheme } from '../theme-provider';
 
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Blog', href: '#blog' },
   { label: 'What I Offer', href: '#services' },
-  { label: 'Gallery', href: '#gallery' },
   { label: 'Contact', href: '#contact' },
 ];
 

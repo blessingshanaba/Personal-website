@@ -10,7 +10,7 @@ import {
   CheckCircle,
   Loader2,
 } from 'lucide-react';
-import { useSubmitContact } from '@/hooks/use-supabase';
+import { useSubmitContact } from '../../hooks/use-supabase';
 
 interface FormData {
   name: string;
@@ -80,9 +80,9 @@ const ContactSection: React.FC = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'hello@blessingshanaba.dev', href: 'mailto:hello@blessingshanaba.dev' },
+    { icon: Mail, label: 'Email', value: 'blessshanaba02@gmail.com', href: 'mailto:blessshanaba02@gmail.com' },
     { icon: Phone, label: 'Phone', value: '+234 8064027344', href: 'tel:+2348064027344' },
-    { icon: MapPin, label: 'Location', value: 'Lagos, Nigeria', href: '#' },
+    { icon: MapPin, label: 'Location', value: 'Nigeria', href: '#' },
   ];
 
   const socialLinks = [

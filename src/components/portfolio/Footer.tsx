@@ -41,14 +41,6 @@ const Footer: React.FC = () => {
     { label: 'Code Review', href: '#services' },
   ];
 
-  const resourceLinks = [
-    { label: 'Blog', href: '#blog' },
-    { label: 'Gallery', href: '#gallery' },
-    { label: 'Pricing', href: '#pricing' },
-    { label: 'Testimonials', href: '#' },
-    { label: 'FAQ', href: '#' },
-  ];
-
   return (
     <footer className="bg-card border-t border-border/50">
       {/* Main footer */}
@@ -74,7 +66,7 @@ const Footer: React.FC = () => {
             {/* Social links */}
             <div className="flex gap-3 mt-6">
               <a
-                href="https://github.com"
+                href="https://github.com/blessingshanaba"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg bg-muted/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
@@ -83,7 +75,7 @@ const Footer: React.FC = () => {
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg bg-muted/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
@@ -92,7 +84,7 @@ const Footer: React.FC = () => {
                 <Linkedin size={18} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/ShanabaBlessing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg bg-muted/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
@@ -101,7 +93,7 @@ const Footer: React.FC = () => {
                 <Twitter size={18} />
               </a>
               <a
-                href="mailto:hello@blessingshanaba.dev"
+                href="mailto:blessshanaba02@gmail.com"
                 className="p-2.5 rounded-lg bg-muted/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
                 aria-label="Email"
               >
@@ -144,22 +136,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Resources</h4>
-            <ul className="space-y-3">
-              {resourceLinks.map((link) => (
-                <li key={link.label}>
-                  <button
-                    onClick={() => handleNavClick(link.href)}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Newsletter */}

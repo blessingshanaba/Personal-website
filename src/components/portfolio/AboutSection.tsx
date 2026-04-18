@@ -2,9 +2,9 @@ import React from 'react';
 import { MapPin, Calendar, Briefcase, GraduationCap } from 'lucide-react';
 
 const stats = [
-  { value: '5+', label: 'Years Experience' },
-  { value: '50+', label: 'Projects Completed' },
-  { value: '30+', label: 'Happy Clients' },
+  { value: '3', label: 'Years Experience' },
+  { value: '5', label: 'Projects Completed' },
+  { value: '30', label: 'Happy Clients' },
   { value: '15+', label: 'Open Source Contributions' },
 ];
 
@@ -54,16 +54,15 @@ const AboutSection: React.FC = () => {
             </h3>
 
             <p className="text-muted-foreground leading-relaxed mb-4">
-              I'm Blessing Shanaba, a full-stack developer with over 5 years of experience
+              I'm Blessing Shanaba, a full-stack developer with a passion for
               building modern web applications. I specialize in creating intuitive,
               performant, and accessible digital products that make a real impact.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-              My approach combines clean code architecture with thoughtful design,
-              ensuring every project I deliver is both technically robust and
-              visually compelling. I'm passionate about open source, design systems,
-              and pushing the boundaries of what's possible on the web.
+              My approach blends well-structured code with intentional design, ensuring
+               every solution I create is both technically solid and visually engaging. 
+              I'm driven by a love for open source, scalable design systems,and continuously exploring new possibilities on the web.
             </p>
 
             {/* Info cards */}
@@ -74,7 +73,7 @@ const AboutSection: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Location</p>
-                  <p className="text-sm font-medium text-foreground">Lagos, Nigeria</p>
+                  <p className="text-sm font-medium text-foreground">Abuja, Nigeria</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-3 rounded-xl bg-background border border-border/50">
@@ -82,8 +81,8 @@ const AboutSection: React.FC = () => {
                   <Calendar size={18} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">Experience</p>
-                  <p className="text-sm font-medium text-foreground">5+ Years</p>
+                  <p className="text-xs text-muted-foreground">Availability</p>
+                  <p className="text-sm font-medium text-foreground">open to work</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-3 rounded-xl bg-background border border-border/50">
@@ -101,7 +100,7 @@ const AboutSection: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Degree</p>
-                  <p className="text-sm font-medium text-foreground">B.Sc. Computer Sci.</p>
+                  <p className="text-sm font-medium text-foreground">B.Sc. on going</p>
                 </div>
               </div>
             </div>

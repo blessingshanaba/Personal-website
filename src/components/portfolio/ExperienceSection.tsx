@@ -3,7 +3,7 @@ import { Briefcase, GraduationCap, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface TimelineItem {
   id: number;
-  type: 'work' | 'education';
+  type: 'work';
   title: string;
   organization: string;
   period: string;
@@ -23,65 +23,24 @@ const timelineItems: TimelineItem[] = [
     achievements: [
       'Architected a micro-frontend system serving 100K+ daily users',
       'Reduced bundle size by 40% through code splitting and lazy loading',
-      'Mentored a team of 5 junior developers',
       'Implemented comprehensive design system with 50+ components',
     ],
     current: true,
   },
   {
-    id: 2,
-    type: 'work',
-    title: 'Full-Stack Developer',
-    organization: 'Digital Craft Agency',
-    period: 'Mar 2022 - Dec 2023',
-    description: 'Built full-stack web applications for diverse clients across fintech and e-commerce.',
-    achievements: [
-      'Delivered 15+ client projects on time and within budget',
-      'Built a real-time trading dashboard processing 10K events/second',
-      'Integrated payment systems handling $2M+ in monthly transactions',
-      'Improved site performance scores from 45 to 95 on Lighthouse',
-    ],
-  },
-  {
-    id: 3,
-    type: 'work',
-    title: 'Frontend Developer',
-    organization: 'StartupHub Inc.',
-    period: 'Jun 2021 - Feb 2022',
-    description: 'Developed responsive web interfaces and contributed to product strategy.',
-    achievements: [
-      'Built the company\'s flagship product from scratch using React',
-      'Implemented A/B testing framework increasing conversions by 25%',
-      'Created automated testing suite with 90% code coverage',
-    ],
-  },
-  {
     id: 4,
     type: 'work',
     title: 'Junior Web Developer',
-    organization: 'WebCraft Studios',
-    period: 'Jan 2020 - May 2021',
+    organization: 'NSUK',
+    period: 'Jan 2024 - May 2026',
     description: 'Started my professional journey building websites and web applications.',
     achievements: [
-      'Developed 20+ responsive websites for small businesses',
+      'Developed 5 responsive websites for small businesses',
       'Learned modern JavaScript frameworks and best practices',
-      'Contributed to open-source projects gaining 500+ GitHub stars',
-    ],
-  },
-  {
-    id: 5,
-    type: 'education',
-    title: 'B.Sc. Computer Science',
-    organization: 'University of Lagos',
-    period: '2016 - 2020',
-    description: 'Graduated with First Class Honours, specializing in software engineering and web technologies.',
-    achievements: [
-      'First Class Honours (4.5/5.0 GPA)',
-      'Best Final Year Project Award',
-      'President of Computer Science Student Association',
     ],
   },
 ];
+
 
 const ExperienceSection: React.FC = () => {
   const [expandedId, setExpandedId] = useState<number | null>(1);

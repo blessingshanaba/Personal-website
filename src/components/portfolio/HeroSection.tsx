@@ -7,17 +7,14 @@ const HeroSection: React.FC = () => {
   };
 
   const handleDownloadCV = () => {
-    // Simulate CV download
     const link = document.createElement('a');
     link.href = '#';
     link.download = 'Blessing_Shanaba_CV.pdf';
-    // In production, this would link to an actual PDF
-    alert('CV download started! (In production, this would download the actual CV file)');
+    alert('CV download started! (This is a placeholder action)');
   };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 bg-violet-500/5 dark:bg-violet-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-3xl" />
@@ -46,7 +43,6 @@ const HeroSection: React.FC = () => {
           applications.
         </p>
 
-        {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <button
             onClick={handleViewWork}
@@ -69,7 +65,7 @@ const HeroSection: React.FC = () => {
         <div className="flex items-center justify-center gap-4">
           <span className="text-sm text-muted-foreground mr-2">Find me on</span>
           <a
-            href="https://github.com"
+            href="https://github.com/blessingshanaba"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-muted/50 hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all duration-200"
@@ -78,7 +74,7 @@ const HeroSection: React.FC = () => {
             <Github size={20} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-muted/50 hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all duration-200"
@@ -87,7 +83,7 @@ const HeroSection: React.FC = () => {
             <Linkedin size={20} />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/ShanabaBlessing"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-muted/50 hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all duration-200"
